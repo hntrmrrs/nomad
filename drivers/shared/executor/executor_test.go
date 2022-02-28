@@ -519,6 +519,7 @@ func copyFile(t *testing.T, src, dst string) {
 func TestExecutor_Start_Kill_Immediately_NoGrace(t *testing.T) {
 	ci.Parallel(t)
 	for name, factory := range executorFactories {
+
 		t.Run(name, func(t *testing.T) {
 			require := require.New(t)
 			testExecCmd := testExecutorCommand(t)

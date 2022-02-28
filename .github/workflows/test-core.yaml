@@ -107,7 +107,7 @@ jobs:
           - command/agent
           # - drivers/docker
           # - drivers/exec
-          - drivers/java
+          # - drivers/java
           - drivers/rawexec
           - helper/...
           - internal/...
